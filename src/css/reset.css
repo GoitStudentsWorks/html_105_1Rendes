@@ -1,6 +1,7 @@
 body {
   font-family: 'Gilroy', 'Arial', sans-serif;
   color: #0c0c0c;
+  margin: 0;
 }
 
 button {
@@ -11,7 +12,6 @@ button {
 
 img {
   display: block;
-  width: 100%;
   height: auto;
 }
 
