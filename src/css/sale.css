@@ -1,0 +1,78 @@
+.sale {
+}
+.containet {
+}
+.sale-container {
+}
+.sale-title {
+font-size: 32px;
+line-height: 1;
+letter-spacing: -0.02em;
+color: #0c0c0c;
+}
+.sale-container-list-img {
+}
+.sale-list {
+}
+.sale-list-item {
+}
+.sale-watch-img-mini {
+}
+.sale-container-watch {
+}
+.sale-watch-img {
+}
+.sale-container-about {
+    border-radius: 30px;
+width: 335px;
+height: 561px;
+background-color: #3350e9;
+}
+.sale-title-about {
+font-weight: 600;
+font-size: 24px;
+line-height: 1.17;
+letter-spacing: -0.02em;
+color: #fbfbfb;
+}
+.sale-title-about-tag {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+color: rgba(251, 251, 251, 0.5);
+}
+.sale-btn {
+font-weight: 600;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: -0.02em;
+color: #fbfbfb;
+}
+.sale-title-about-price {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: -0.02em;
+text-decoration: line-through;
+color: rgba(251, 251, 251, 0.5);
+}
+.sale-container-text {
+}
+.sale-title-about-text {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+color: rgba(251, 251, 251, 0.7);
+}
+.sale-container-btn {
+}
+.sale-container-btn-option {
+}
+.sale-btn-type {
+font-weight: 500;
+font-size: 12px;
+line-height: 1.33;
+color: #fbfbfb;
+}
