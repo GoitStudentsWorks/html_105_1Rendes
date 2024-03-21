@@ -4,6 +4,7 @@
     background: #f3f3f3;
   
 }
-/* .photo-clients {
-
-} */
+.photo-clients {
+    max-width: 56px;
+    max-height: 56px;
+}
