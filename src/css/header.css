@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header .container {
+  display: flex;
+  justify-content: center;
+}
+
+.header-logo-link {
+  font-size: 20px;
+  color: inherit;
+}
+.header-navigation {
+}
+.header-nav-list {
+  display: flex;
+}
+.header-nav-item {
+}
+.header-nav-a {
+  color: inherit;
+}
+.header-icon {
+}
