@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  color: #0c0c0c;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
