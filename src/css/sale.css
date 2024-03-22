@@ -1,8 +1,3 @@
-.sale {
-  padding: 0px 20px;
-  max-width: 335px;
-  height: 1122px;
-}
 .sale-title {
   font-size: 32px;
   line-height: 1;
@@ -12,8 +7,6 @@
 }
 .sale-container-list-img {
   margin-bottom: 20px;
-  max-width: 335px;
-  height: 80px;
 }
 .sale-list {
   display: flex;
@@ -36,19 +29,17 @@
 .sale-container-watch {
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
-  max-width: 335px;
-  height: 385px;
+    height: 385px;
   background-color: #f3f3f3;
   margin-bottom: 20px;
 }
 .sale-watch-img {
-  margin: 50px 50px;
+  margin: 50px auto;
 }
 .sale-container-about {
   padding: 48px 28px;
   border-radius: 30px;
-  max-width: 335px;
-  background-color: #3350e9;
+    background-color: #3350e9;
 }
 .sale-container-title {
   max-width: 279px;
