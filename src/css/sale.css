@@ -1,10 +1,7 @@
 .sale {
   padding: 0px 20px;
-  width: 375px;
+  max-width: 335px;
   height: 1122px;
-}
-.sale-container {
-max-width: 335px;
 }
 .sale-title {
   font-size: 32px;
@@ -23,21 +20,23 @@ max-width: 335px;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 5px;
+  margin: 0;
 }
 .sale-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 16px;
   width: 80px;
-  height: 80px;
+  height: 78px;
   background-color: #f3f3f3;
 }
-.sale-watch-img-mini {
-  padding: 13px 14px;
-}
+
 .sale-container-watch {
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
-  width: 335px;
+  max-width: 335px;
   height: 385px;
   background-color: #f3f3f3;
   margin-bottom: 20px;
@@ -96,8 +95,8 @@ max-width: 335px;
   color: rgba(251, 251, 251, 0.5);
 }
 .sale-container-text {
-    max-width: 279px;
-    height: 161px;
+  max-width: 279px;
+  height: 161px;
 }
 .sale-title-about-text {
   font-weight: 500;
@@ -106,14 +105,12 @@ max-width: 335px;
   letter-spacing: -0.02em;
   color: rgba(251, 251, 251, 0.7);
 }
-.sale-container-btn {
-}
 .sale-container-btn-option {
-    max-width: 279px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 8px;
+  max-width: 279px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 .sale-btn-type {
   font-weight: 500;
@@ -121,8 +118,8 @@ max-width: 335px;
   line-height: 1.33;
   color: #fbfbfb;
   border: 1px solid rgba(251, 251, 251, 0.2);
-border-radius: 8px;
-padding: 8px 12px;
-height: 32px;
-background-color: transparent;
+  border-radius: 8px;
+  padding: 8px 12px;
+  height: 32px;
+  background-color: transparent;
 }
