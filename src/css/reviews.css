@@ -1,10 +1,17 @@
 .reviews-title {
     font-weight: 600;
-    font-size: 48px;
-    line-height: 0.91667;
+    font-size: 32px;
+    line-height: 1;
     letter-spacing: -0.02em;
     color: #0c0c0c;
+    margin-bottom: 24px;
+}
+@media screeen and (min-width: 768px) {
+    .reviews-title {
+    font-size: 48px;
+    line-height: 0.916;
     margin-bottom: 40px;
+}
 }
 .reviews-list {
     display: flex;
@@ -36,9 +43,15 @@
 }
 .reviews-text {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
+    font-size: 14px;
+    line-height: 1.285;
     letter-spacing: -0.02em;
     text-align: center;
     color: rgba(12, 12, 12, 0.4);
+}
+@media screeen and (min-width: 768px) {
+.reviews-text {
+    font-size: 16px;
+    line-height: 1.25;
+}
 }
