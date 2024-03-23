@@ -23,7 +23,7 @@
         </li>
       </ul>
     </nav>
-    <button onclick="MenuOpen()" class="header-menu-butt">
+    <button onclick="openNav()" class="header-menu-butt">
       <svg class="header-menu-icon" width="40" height="40">
         <use href="./img/icons.svg#menu"></use>
       </svg>
@@ -59,3 +59,11 @@
     </div>
   </div>
 </header>
+<script>
+  function openNav() {
+    document.getElementById('backdrop').classList.add('is-open');
+  }
+  function closeNav() {
+    document.getElementById('backdrop').classList.remove('is-open');
+  }
+</script>
