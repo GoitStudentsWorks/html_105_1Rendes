@@ -1,0 +1,138 @@
+.hero-section {
+    padding: 60px 20px 0px 20px;
+    width: 375px;
+    height: 732px;
+}
+@media screen and (min-width: 768px) {
+    .hero-section {
+    padding: 80px 32px 0px 32px;
+    width: 768px;
+    height: 900px;
+
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-section {
+    padding: 80px 65px 0px 65px;
+    width: 1280px;
+    height: 889px;
+    }
+}
+.hero-contenier-text {
+width: 335px;
+height: 206px;
+}
+@media screen and (min-width: 768px) {
+    .hero-contenier-text {
+        width: 557px;
+        height: 260px;
+
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-contenier-text {
+    width: 597px;
+    height: 269px;
+
+    }
+}
+.hero-title {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+    
+}
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 70px;
+        line-height: 0.85714;
+        
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-title {
+    font-size: 72px;
+    line-height: 0.875;
+    
+    }
+}
+.hero-span {
+    color: #3350e9;
+}
+.hero-text {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    color: rgba(12, 12, 12, 0.7);
+    margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+    .hero-text {
+            font-size: 16px;
+            line-height: 1.25;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-text {
+            font-size: 16px;
+            line-height: 1.25;
+               }
+}
+.hero-scroll {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #0c0c0c;
+    padding-top: 26px;
+}
+@media screen and (min-width: 768px) {
+    .hero-scroll { 
+        font-size: 20px;
+        line-height: 1;        
+    }
+}
+.hero-scroll:hover,
+.hero-scroll:focus {
+    color: #3350e9;
+    }
+.hero-ellipse {
+    display: flex;
+    gap: 155px;
+    margin-top: 28px;
+      
+}
+@media screen and (min-width: 768px) {
+    .hero-contenier-tablet {
+        display: flex;
+    }
+    .hero-ellipse {
+        display: block;
+        margin-top: 0;
+        
+    }
+    .hero-contenier-text {
+        margin-right: 11px;
+    }
+    
+}
+.hero-picture {
+    margin-top: 28px;
+}
+.hero-picture-info {
+    border-radius: 30px;
+    background-color: rgba(12, 12, 12, 0.2);
+    
+}
