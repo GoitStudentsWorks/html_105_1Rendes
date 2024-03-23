@@ -1,0 +1,68 @@
+<section class="contact-section">
+  <div class="container">
+    <h2 class="contact-title">Contact Us</h2>
+    <div class="contact-container">
+      <form class="contact-form">
+        <p class="contact-form-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <input
+          class="contact-form-input"
+          type="text"
+          name="user-name"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="contact-form-input"
+          type="email"
+          name="user-email"
+          placeholder="Email"
+          required
+        />
+        <input
+          class="contact-form-input"
+          type="tel"
+          name="user-phone"
+          placeholder="+380"
+          required
+        />
+        <textarea
+          class="contact-form-input contact-form-comment"
+          name="user-comments"
+          placeholder="Comment"
+        ></textarea>
+        <button class="contact-btn" type="submit">Send</button>
+      </form>
+      <picture>
+        <source
+          srcset="
+            ./img/contact/desktop-contact-watch.jpg    1x,
+            ./img/contact/desktop-contact-watch@2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./img/contact/tablet-contact-watch.jpg    1x,
+            ./img/contact/tablet-contact-watch@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./img/contact/mobile-contact-watch.jpg    1x,
+            ./img/contact/mobile-contact-watch@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="contact-photo"
+          src="./img/contact/mobile-contact-watch.jpg"
+          alt="Watch on the stone"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
