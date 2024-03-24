@@ -1,7 +1,8 @@
-function openNav() {
-  document.getElementById('backdrop').classList.add('is-open');
-}
-
-function closeNav() {
-  document.getElementById('backdrop').classList.remove('is-open');
-}
+var header = document.getElementById('header');
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 0) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});

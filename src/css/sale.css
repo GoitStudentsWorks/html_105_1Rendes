@@ -25,11 +25,10 @@
   height: 78px;
   background-color: #f3f3f3;
 }
-
 .sale-container-watch {
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
-    height: 385px;
+  height: 385px;
   background-color: #f3f3f3;
   margin-bottom: 20px;
 }
@@ -39,7 +38,7 @@
 .sale-container-about {
   padding: 48px 28px;
   border-radius: 30px;
-    background-color: #3350e9;
+  background-color: #3350e9;
 }
 .sale-container-title {
   max-width: 279px;
@@ -87,7 +86,7 @@
 }
 .sale-container-text {
   max-width: 279px;
-  height: 161px;
+  margin-bottom: 28px;
 }
 .sale-title-about-text {
   font-weight: 500;
@@ -113,4 +112,102 @@
   padding: 8px 12px;
   height: 32px;
   background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .sale-container-img {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .sale-title {
+    font-size: 48px;
+    line-height: 0.92;
+    margin-bottom: 40px;
+  }
+  .sale-container-list-img {
+    width: 132px;
+    height: 558px;
+    margin-bottom: 0;
+  }
+  .sale-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sale-list-item {
+    border-radius: 20px;
+    width: 130px;
+    height: 130px;
+  }
+  .sale-container-watch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 552px;
+    height: 558px;
+    margin-bottom: 0;
+  }
+  .sale-container-about {
+    padding: 60px 60px;
+    border-radius: 50px;
+  }
+  .sale-container-title {
+    max-width: 436px;
+  }
+  .sale-title-about {
+    font-size: 32px;
+    line-height: 1.13;
+    letter-spacing: -0.02em;
+  }
+  .sale-btn-text {
+    margin-bottom: 30px;
+  }
+  .sale-btn {
+    min-width: 78px;
+    font-size: 20px;
+    line-height: 1;
+  }
+  .sale-container-text {
+    max-width: 584px;
+    height: 100px;
+    margin-bottom: 40px;
+  }
+  .sale-title-about-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .sale-container-btn-option {
+    max-width: 398px;
+    margin: 0;
+  }
+  .sale-btn-type {
+    font-size: 14px;
+    line-height: 1.29;
+    height: 34px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sale-container-img {
+    margin-bottom: 0;
+  }
+  .sale-container-desk {
+    display: flex;
+    gap: 40px;
+  }
+  .sale-container-watch {
+    width: 426px;
+  }
+  .sale-container-title {
+    max-width: 389px;
+  }
+  .sale-container-text {
+    max-width: 410px;
+    height: 140px;
+  }
+  .sale-title-about-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
