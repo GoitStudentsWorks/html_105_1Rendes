@@ -92,41 +92,7 @@
     line-height: 1.25;
 }
 }
+/* .swiper {
+        width: 100%;
+} */
 
-
-/* Carousel */
-  .swiper-button-next.swiper-navBtn {
-    color: #FFFFFF;
-  }
-  .swiper-button-prev.swiper-navBtn {
-    color: #FFFFFF;
-  }
-  .swiper-navBtn:hover{
-    color: #4070F4;
-  }
-  .swiper-navBtn::before,
-  .swiper-navBtn::after{
-    font-size: 35px;
-  }
-  .swiper-button-next{
-    right: 0;
-  }
-  .swiper-button-prev{
-    left: 0;
-  }
-  .swiper-pagination-bullet{
-    background-color: #6E93f7;
-    opacity: 1;
-  }
-  .swiper-pagination-bullet-active{
-    background-color: #4070F4;
-  }
-  @media screen and (max-width: 768px) {
-    .slide-content{
-      margin: 0 10px;
-    }
-    .swiper-navBtn{
-      display: none;
-    }
-  }
- 
