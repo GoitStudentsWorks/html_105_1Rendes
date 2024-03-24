@@ -92,14 +92,7 @@
     line-height: 1.25;
 }
 }
-.swiper {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
+/* .swiper .reviews-list{
     z-index: -1;
-    display: block;
-}
+} */
 
