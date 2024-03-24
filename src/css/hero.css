@@ -1,5 +1,5 @@
 .hero-section {
-    margin-top: 80px;
+    margin-top: 88px;
 }
 
 .hero-container {
@@ -162,7 +162,10 @@
 .hero-picture-info {   
     border-radius: 30px;
     width: 335px;
-    color: rgba(12, 12, 12, 0.2);
+    background-image: linear-gradient(to bottom,
+                rgba(12, 12, 12, 0.2),
+                rgba(12, 12, 12, 0.2)),
+            url(../img/hero/mobile-hero/mobile-hero@2x);
 }
 
 @media screen and (min-width: 768px) {
