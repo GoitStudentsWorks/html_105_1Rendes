@@ -1,6 +1,15 @@
 .header {
+  position: fixed;
+  width: 100%;
+  transition: background-color 250ms ease-in-out;
+  background-color: transparent;
   border-bottom: 1px solid;
   border-color: #0c0c0c1a;
+}
+
+.header.scrolled {
+  background-color: rgba(0, 0, 0, 0.35);
+  border-color: none;
 }
 
 .header .container {
