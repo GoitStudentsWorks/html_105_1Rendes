@@ -1,6 +1,15 @@
 .header {
+  position: fixed;
+  width: 100%;
+  transition: background-color 250ms ease-in-out;
+  background-color: transparent;
   border-bottom: 1px solid;
   border-color: #0c0c0c1a;
+}
+
+.header.scrolled {
+  background-color: rgba(0, 0, 0, 0.35);
+  border-color: none;
 }
 
 .header .container {
@@ -36,7 +45,13 @@
 .header-menu-icon {
   width: 34px;
   height: 34px;
+  fill: #0c0c0c;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header.scrolled .header-menu-icon {
+  fill: white;
+}
+
 @media (min-width: 768px) {
   .header-menu-icon {
     width: 40px;
@@ -47,6 +62,8 @@
 .header-logo-link {
   font-size: 20px;
   color: inherit;
+  text-shadow: 0px 0px 5px white, 0px 0px 7px white, 0px 0px 8px white,
+    0px 0px 10px white, 0px 0px 6px white;
 }
 .header-nav-list {
   display: flex;
@@ -73,6 +90,8 @@
   font-size: 14px;
   display: block;
   height: 28px;
+  text-shadow: 0px 0px 5px white, 0px 0px 7px white, 0px 0px 8px white,
+    0px 0px 10px white, 0px 0px 6px white;
 }
 .header-nav-active::after {
   position: absolute;
@@ -113,11 +132,16 @@
   border: 1px solid;
   border-color: #0c0c0c1a;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 0px 5px white;
 }
 
 .header-icon {
   fill: #0c0c0c;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header.scrolled .header-icon {
+  fill: white;
 }
 
 .header-social-link:hover,

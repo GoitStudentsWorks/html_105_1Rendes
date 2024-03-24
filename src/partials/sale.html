@@ -1,101 +1,173 @@
 <section class="sale">
   <div class="container sale-container">
     <h2 class="sale-title">Sale</h2>
-    <div class="sale-container-list-img">
-      <ul class="sale-list">
-        <li class="sale-list-item">
-          <img
-            class="sale-watch-img-mini"
-            srcset="./img/sale/mobile-watch-front@2x.png 2x"
-            src="./img/sale/mobile-watch-front.png"
-            width="54"
-            height="54"
-            alt="sale watch mini img"
-          />
-        </li>
-        <li class="sale-list-item">
-          <img
-            class="sale-watch-img-mini"
-            srcset="./img/sale/mobile-watch-frontv@2x.png 2x"
-            src="./img/sale/mobile-watch-frontv.png"
-            width="54"
-            height="54"
-            alt="sale watch mini img"
-          />
-        </li>
-        <li class="sale-list-item">
-          <img
-            class="sale-watch-img-mini"
-            srcset="./img/sale/mobile-watch-left@2x.png 2x"
-            src="./img/sale/mobile-watch-left.png"
-            width="54"
-            height="54"
-            alt="sale watch mini img"
-          />
-        </li>
-        <li class="sale-list-item">
-          <img
-            class="sale-watch-img-mini"
-            srcset="./img/sale/tablet-watch-back@2x.png 2x"
-            src="./img/sale/mobile-watch-back.png"
-            width="52"
-            height="54"
-            alt="sale watch mini img"
-          />
-        </li>
-      </ul>
-    </div>
-    <div class="sale-container-watch">
-      <img
-        class="sale-watch-img"
-        srcset="./img/sale/mobile-watch-garmin-marq@2x.png 2x"
-        src="./img/sale/mobile-watch-garmin-marq.png"
-        width="235"
-        height="285"
-        alt="Garmin MARQ watch sale"
-      />
-    </div>
-    <div class="sale-container-about">
-      <div class="sale-container-title">
-        <h3 class="sale-title-about">
-          MARQ® Commander (Gen 2) - Carbon Edition
-        </h3>
-        <p class="sale-title-about-tag">Product tag: 706587</p>
-        <div class="sale-btn-text">
-          <button class="sale-btn" type="button">€1500</button>
-          <p class="sale-title-about-price">€3000</p>
+    <div class="sale-container-desk">
+      <div class="sale-container-img">
+        <div class="sale-container-list-img">
+          <ul class="sale-list">
+            <li class="sale-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/sale/tablet-watch-front.png    1x,
+                    ./img/sale/tablet-watch-front@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/sale/mobile-watch-front.png    1x,
+                    ./img/sale/mobile-watch-front@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="sale-watch-img-mini"
+                  src="./img/sale/mobile-watch-front.png"
+                  alt="sale watch mini img"
+                />
+              </picture>
+            </li>
+            <li class="sale-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/sale/tablet-watch-frontv.png    1x,
+                    ./img/sale/tablet-watch-frontv@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/sale/mobile-watch-frontv.png    1x,
+                    ./img/sale/mobile-watch-frontv@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="sale-watch-img-mini"
+                  src="./img/sale/mobile-watch-frontv.png"
+                  alt="sale watch mini img"
+                />
+              </picture>
+            </li>
+            <li class="sale-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/sale/tablet-watch-left.png    1x,
+                    ./img/sale/tablet-watch-left@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/sale/mobile-watch-left.png    1x,
+                    ./img/sale/mobile-watch-left@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="sale-watch-img-mini"
+                  src="./img/sale/mobile-watch-left.png"
+                  alt="sale watch mini img"
+                />
+              </picture>
+            </li>
+            <li class="sale-list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/sale/tablet-watch-back.png    1x,
+                    ./img/sale/tablet-watch-back@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/sale/mobile-watch-back.png    1x,
+                    ./img/sale/mobile-watch-back@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="sale-watch-img-mini"
+                  src="./img/sale/mobile-watch-back.png"
+                  alt="sale watch mini img"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+        <div class="sale-container-watch">
+          <picture>
+            <source
+              srcset="
+                ./img/sale/tablet-watch-garmin-marq.png    1x,
+                ./img/sale/tablet-watch-garmin-marq@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./img/sale/mobile-watch-garmin-marq.png    1x,
+                ./img/sale/mobile-watch-garmin-marq@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="sale-watch-img"
+              src="./img/sale/mobile-watch-garmin-marq.png"
+              alt="Garmin MARQ watch sale"
+            />
+          </picture>
         </div>
       </div>
-      <div class="sale-container-text">
-        <p class="sale-title-about-text">
-          The Garmin MARQ Commander Gen 2 Carbon Edition is a modern smartwatch
-          for adventurers that takes materials and features to the next level.
-          The body of the watch is made of very durable Fused Carbon Fiber
-          material and has a precise AMOLED touch screen. The sensitive touch
-          screen is complemented by buttons that can be used in any conditions.
-        </p>
-      </div>
-      <div class="sale-container-btn">
-        <ul class="sale-container-btn-option">
-          <li>
-            <button class="sale-btn-type" type="button">
-              Fused carbon fiber
-            </button>
-          </li>
-          <li>
-            <button class="sale-btn-type" type="button">
-              Grade-5 Titanuim
-            </button>
-          </li>
-          <li><button class="sale-btn-type" type="button">Athlete</button></li>
-          <li><button class="sale-btn-type" type="button">Golfer</button></li>
-          <li>
-            <button class="sale-btn-type" type="button">Commander</button>
-          </li>
-          <li>
-            <button class="sale-btn-type" type="button">Adventurer</button>
-          </li>
-        </ul>
+      <div class="sale-container-about">
+        <div class="sale-container-title">
+          <h3 class="sale-title-about">
+            MARQ® Commander (Gen 2) - Carbon Edition
+          </h3>
+          <p class="sale-title-about-tag">Product tag: 706587</p>
+          <div class="sale-btn-text">
+            <button class="sale-btn" type="button">€1500</button>
+            <p class="sale-title-about-price">€3000</p>
+          </div>
+        </div>
+        <div class="sale-container-text">
+          <p class="sale-title-about-text">
+            The Garmin MARQ Commander Gen 2 Carbon Edition is a modern
+            smartwatch for adventurers that takes materials and features to the
+            next level. The body of the watch is made of very durable Fused
+            Carbon Fiber material and has a precise AMOLED touch screen. The
+            sensitive touch screen is complemented by buttons that can be used
+            in any conditions.
+          </p>
+        </div>
+        <div class="sale-container-btn">
+          <ul class="sale-container-btn-option">
+            <li>
+              <button class="sale-btn-type" type="button">
+                Fused carbon fiber
+              </button>
+            </li>
+            <li>
+              <button class="sale-btn-type" type="button">
+                Grade-5 Titanuim
+              </button>
+            </li>
+            <li>
+              <button class="sale-btn-type" type="button">Athlete</button>
+            </li>
+            <li><button class="sale-btn-type" type="button">Golfer</button></li>
+            <li>
+              <button class="sale-btn-type" type="button">Commander</button>
+            </li>
+            <li>
+              <button class="sale-btn-type" type="button">Adventurer</button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

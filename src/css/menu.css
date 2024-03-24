@@ -30,6 +30,7 @@
   right: 0px;
   width: 200px;
   height: 100%;
+  z-index: 500;
   margin: auto;
   transform: translate(0%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -128,5 +129,11 @@
   }
 }
 .menu-icon {
+  fill: #cbcbcb;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-social-link:hover .menu-icon,
+.menu-social-link:focus .menu-icon {
   fill: #fbfbfb;
 }
