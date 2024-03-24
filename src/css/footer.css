@@ -57,6 +57,7 @@ a {
   height: 18px;
   flex-shrink: 0;
   fill: #fbfbfb;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icon:hover,
@@ -87,6 +88,8 @@ a {
   color: #fbfbfb;
   padding: 14px 20px;
   border-radius: 16px;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-tel-text:hover,
