@@ -134,11 +134,12 @@
 
 .hero-picture {
     align-items: center;
-    margin-top: 28px; 
-    
+    margin-top: 28px;    
     
 }
-
+.hero-img {
+    width: 100%;
+}
 @media screen and (min-width: 768px) {
     .hero-picture {
         margin-top: 40px;
@@ -148,7 +149,7 @@
 
 .hero-picture-info {   
     border-radius: 30px;
-    width: 100%;
+   
         
 }
 
