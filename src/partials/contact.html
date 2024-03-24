@@ -2,40 +2,44 @@
   <div class="container">
     <h2 class="contact-title">Contact Us</h2>
     <div class="contact-container">
-      <form class="contact-form">
+      <div class="contact-content">
         <p class="contact-form-text">
           Please use the form below to contact us. Enter your name, email,
           phone, and message and we'll get back to you shortly.
         </p>
-        <input
-          class="contact-form-input"
-          type="text"
-          name="user-name"
-          placeholder="Name"
-          required
-        />
-        <input
-          class="contact-form-input"
-          type="email"
-          name="user-email"
-          placeholder="Email"
-          required
-        />
-        <input
-          class="contact-form-input"
-          type="tel"
-          name="user-phone"
-          placeholder="+380"
-          required
-        />
-        <textarea
-          class="contact-form-input contact-form-comment"
-          name="user-comments"
-          placeholder="Comment"
-        ></textarea>
-        <button class="contact-btn" type="submit">Send</button>
-      </form>
-      <picture>
+        <form class="contact-form">
+          <input
+            class="contact-form-input"
+            type="text"
+            name="user-name"
+            placeholder="Name"
+            pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+            required
+          />
+          <input
+            class="contact-form-input"
+            type="email"
+            name="user-email"
+            placeholder="Email"
+            required
+          />
+          <input
+            class="contact-form-input"
+            type="tel"
+            name="user-phone"
+            placeholder="+380"
+            pattern="[0-9]+"
+            required
+          />
+          <textarea
+            class="contact-form-input contact-form-comment"
+            name="user-comments"
+            placeholder="Comment"
+          ></textarea>
+          <button class="contact-btn" type="submit">Send</button>
+        </form>
+      </div>
+      <picture class="contact-photo">
         <source
           srcset="
             ./img/contact/desktop-contact-watch.jpg    1x,
@@ -58,7 +62,6 @@
           media="(max-width: 767px)"
         />
         <img
-          class="contact-photo"
           src="./img/contact/mobile-contact-watch.jpg"
           alt="Watch on the stone"
         />
