@@ -1,0 +1,104 @@
+/* == Phone Advertisement Section styles == */
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+
+.advertisement-container{border-radius: 30px;
+max-width: 335px;
+height: 363px;
+background-image: url("/img/advert/advert-mobile.png");  background-size: cover;
+background-color: #0c0c0c;;
+margin-left: auto;
+padding: 60px 28px;
+margin-right: auto;
+background-repeat: no-repeat;
+background-position: center; 
+}
+.advert-text{
+max-width: 279px;
+margin-bottom: 28px;
+font-weight: 600;
+font-size: 32px;
+line-height: 1;
+letter-spacing: -0.02em;
+color: #fbfbfb;
+}
+
+.advert-part{color: rgba(251, 251, 251, 0.5);
+}
+
+.advert-div-btn{
+display: flex;
+align-items: center;
+}
+.advert-link{display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;
+color: #fbfbfb;
+margin-right: auto;
+text-align: center;
+border-radius: 30px;
+width: 160px;
+height: 48px;
+background-color: rgba(28,28,28,0);
+border: 1px solid #FBFBFB;
+;}
+
+@media only screen and (min-resolution: 192dpi) and (max-width: 767px){ 
+    .advertisement {
+        background-image: url("/img/advert/advert-mobile@2x.png");
+    }}
+
+/* == Tablet Advertisement Section styles == */
+@media only screen and (min-width: 768px){
+    .advertisement-container {max-width: 704px; 
+        height: 425px; padding: 80px 64px;
+        background-image: url("/img/advert/advert-tablet.png");
+    }
+    .advert-text{max-width: 576px; 
+        font-size: 48px;
+        line-height: 0.92;
+        margin-bottom: 32px;
+    }
+}
+@media only screen and (min-resolution: 192dpi) and (min-width: 768px){
+    .advertisement-container { 
+        background-image: url("/img/advert/advert-tablet@2x.png");
+            }}
+/* == Desktop Advertisement Section styles == */
+@media only screen and (min-width: 1158px){
+    .advertisement-container {max-width: 1158px; height: 298px;
+        background-image: url("/img/advert/advert-desktop.png");
+    }
+    .advert-div{
+        display: flex;
+        align-items: baseline;
+        gap: 140px;
+    }
+    .advert-text{max-width: 690px;
+        font-size: 48px;
+
+    }
+    .advert-link:hover,
+    .advert-link:focus{
+    color: #0c0c0c;
+    background: #fbfbfb;
+}
+}
+    @media only screen and (min-resolution: 192dpi) and (min-width:1158px){
+        .advertisement-container {padding: 120px 0;
+        background-image: url("/img/advert/advert-desktop@2x.png")}
+    }
