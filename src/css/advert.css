@@ -80,7 +80,7 @@ border: 1px solid #FBFBFB;
             }}
 /* == Desktop Advertisement Section styles == */
 @media only screen and (min-width: 1158px){
-    .advertisement-container {max-width: 1158px; height: 298px;
+    .advertisement-container {max-width: 1158px; height: 298px; padding: 80px 80px;
         background-image: url("/img/advert/advert-desktop.png");
     }
     .advert-div{
