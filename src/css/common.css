@@ -37,17 +37,17 @@ html {
 }
 
 section {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 @media (min-width: 768px) {
   section {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
 }
 
 @media (min-width: 1280px) {
   section {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 }
