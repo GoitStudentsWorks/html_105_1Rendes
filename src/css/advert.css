@@ -1,0 +1,115 @@
+/* == Phone Advertisement Section styles == */
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+.advertisement-container{border-radius: 30px;
+max-width: 335px;
+background-image: url("/img/advert/advert-mobile.png");  
+background-size: cover;
+background-color: #0c0c0c;
+padding: 60px 28px;
+background-repeat: no-repeat;
+background-position: center; 
+}
+.advert-div{
+display: flex;
+flex-direction: column;
+column-gap: 28px;
+}
+
+.advert-text{
+max-width: 279px;
+margin-bottom: 28px;
+font-weight: 600;
+font-size: 32px;
+line-height: 1;
+letter-spacing: -0.02em;
+color: #fbfbfb;
+}
+
+.advert-part{color: rgba(251, 251, 251, 0.5);
+}
+
+.advert-div-btn{
+display: flex;
+align-items: center;
+}
+.advert-link{display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.29;
+color: #fbfbfb;
+border-radius: 16px;
+max-width: 158px;
+height: 46px;
+background-color: rgba(28,28,28,0);
+border: 1px solid rgba(251, 251, 251, 0.15);
+overflow: hidden;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.advert-link:hover,
+.advert-link:focus{
+color: #0c0c0c;
+background: #fbfbfb;}
+
+@media only screen and (min-resolution: 192dpi) and (max-width: 767px){ 
+    .advertisement-container {
+        background-image: url("/img/advert/advert-mobile@2x.png");
+    }}
+
+/* == Tablet Advertisement Section styles == */
+@media only screen and (min-width: 768px){
+    .advertisement-container {max-width: 704px; 
+        padding: 80px 64px;
+        background-image: url("/img/advert/advert-tablet.png");
+    }
+    .advert-text{max-width: 576px; 
+        font-size: 48px;
+        line-height: 0.92;
+        margin-bottom: 32px;
+    }
+    .advert-div{
+        column-gap: 32px;
+        }
+}
+@media only screen and (min-resolution: 192dpi) and (min-width: 768px){
+    .advertisement-container { 
+        background-image: url("/img/advert/advert-tablet@2x.png");
+            }}
+/* == Desktop Advertisement Section styles == */
+@media only screen and (min-width: 1280px){
+    .advertisement-container {max-width: 1150px; padding: 83px 80px;
+    background-image: url("/img/advert/advert-desktop.png");
+    padding: 83px 80px;}
+
+    .advert-div{
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .advert-text{max-width: 690px;
+        font-size: 48px;
+        margin-bottom: 0;
+    }
+    .advert-link{
+        min-width: 158px;
+    }
+ }
+    @media only screen and (min-resolution: 192dpi) and (min-width:1280px){
+        .advertisement-container {
+        background-image: url("/img/advert/advert-desktop@2x.png")}
+    }
