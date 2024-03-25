@@ -46,6 +46,11 @@
   outline: transparent;
   background: #3350e9;
   color: #fbfbfb;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.about-link-btn:hover,
+.about-link-btn:focus {
+  background-color: #1f3cd4;
 }
 .about-photo {
   display: flex;
