@@ -110,7 +110,7 @@
               <p class="catalog-item-price">€380</p>
               </div>            
         </li>
-        <li class="catalog-item-img catalog-item-img-wrap">          
+        <li class="catalog-item-img hidden catalog-item-img-wrap">          
             <picture>                
                 <source
                   srcset="
@@ -119,6 +119,12 @@
                   "
                   media="(min-width: 768px)"
                 />
+                <source
+                  srcset="
+                      ./img/catalog/mob5-garmin-6pro.png 1x,
+                      ./img/catalog/mob5-garmin-6pro@2x.png 2x
+                      "
+                      media="(max-width: 767px)"/>
                 <img
                   src="./img/catalog/mob5-garmin-6pro.png"
                   alt="Garmin 6pro"
@@ -130,7 +136,7 @@
               <p class="catalog-item-price">€400</p>
               </div>            
         </li>
-        <li class="catalog-item-img catalog-item-img-wrap">          
+        <li class="catalog-item-img hidden catalog-item-img-wrap">          
             <picture>                
                 <source
                   srcset="
@@ -139,6 +145,12 @@
                   "
                   media="(min-width: 768px)"
                 />
+                <source
+                  srcset="
+                      ./img/catalog/mob6-tube-watch.png 1x,
+                      ./img/catalog/mob6-tube-watch@2x.png 2x
+                      "
+                      media="(max-width: 767px)"/>
                 <img
                   src="./img/catalog/mob6-tube-watch.png"
                   alt="Tube watch"
@@ -152,6 +164,6 @@
             </div>            
         </li>
     </ul>
-    <button class="catalog-btn" type="button">Show more</button>    
+    <button class="catalog-btn" type="button" id="toggleItemsButton">Show more</button>    
    </div>
 </section>

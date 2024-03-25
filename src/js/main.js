@@ -36,4 +36,32 @@ const swiper = new Swiper('.swiper', {
           // spaceBetween: 20,
       },
   },
+
 });
+
+// button show more///--------
+// 
+document.addEventListener("DOMContentLoaded", function() {
+  var button = document.getElementById('toggleItemsButton');
+  var hiddenItems = document.querySelectorAll('.hidden');
+
+  button.addEventListener('click', function() {
+      hiddenItems.forEach(function(item) {
+          if (item.style.display === 'none') {
+              item.style.display = 'block';
+          } else {
+              item.style.display = 'none';
+          }
+      });
+
+      if (button.textContent === 'Show More') {
+          button.textContent = 'Close';
+      } else {
+          button.textContent = 'Show More';
+      }
+  });
+});
+
+
+
+

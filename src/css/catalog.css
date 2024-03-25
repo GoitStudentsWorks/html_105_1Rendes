@@ -74,9 +74,10 @@
 .catalog-btn:hover {
     background: #1f3cd4;
 }
-.catalog-item-img-wrap {
+/* .catalog-item-img-wrap {
     display: none;
-}
+} */
+
 @media only screen and (min-width: 768px) {
     .catalog-btitle {
         font-size: 48px;
@@ -93,9 +94,9 @@
         height: 412px;        
         width: calc((100% - 20px) / 2);
     }
-    .catalog-item-img-wrap {
-        display: list-item;
-    }
+    /* .catalog-item-img-wrap {
+        display: block;
+    } */
     .catalog-item-name-price {
        margin: 0 32px 24px 32px;
     }
@@ -118,4 +119,7 @@
     .catalog-item-name-price {
         max-width: 304px;
     }
+}
+.hidden {
+    display: none;
 }
