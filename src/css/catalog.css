@@ -108,7 +108,9 @@
         display: none;
     }
 }
-
+.hidden {
+    display: none;
+}
 @media only screen and (min-width: 1280px) {
     .catalog-title {        
         column-gap: 23px;
@@ -119,7 +121,8 @@
     .catalog-item-name-price {
         max-width: 304px;
     }
+    .hidden {
+        display: block;
+    }
 }
-.hidden {
-    display: none;
-}
+
