@@ -1,11 +1,43 @@
 <section class="about-section">
   <div class="container about-container">
-    <h2 class="about-title"></h2>
-    <p class="about-text about-text-firts"></p>
-    <p class="about-text about-text-second"></p>
-    <a href="#catalog"></a>
+    <div class="about-content">
+      <h2 class="about-title">About Us</h2>
+      <p class="about-text about-text-first">
+        Welcome to our premium watch collection, where luxury and style meet
+        functionality and precision. Our selection of timepieces embodies the
+        very best in Swiss craftsmanship and engineering, ensuring that you'll
+        always have a reliable and stylish accessory on your wrist.
+      </p>
+      <p class="about-text about-text-second">
+        At our premium watch collection, we believe that a watch is more than
+        just a timekeeping device – it's a statement piece that reflects your
+        personality and style. So why settle for anything less than the best?
+      </p>
+      <a class="about-link-btn" href="#catalog">View catalog</a>
+    </div>
+    <picture class="about-photo">
+      <source
+        srcset="
+          ./img/about/desktop-about-watch.jpg    1x,
+          ./img/about/desktop-about-watch@2x.jpg 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ./img/about/tablet-about-watch.jpg    1x,
+          ./img/about/tablet-about-watch@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./img/about/mobile-about-watch.jpg    1x,
+          ./img/about/mobile-about-watch@2x.jpg 2x
+        "
+        media="(max-width: 375px)"
+      />
+      <img src="./img/about/mobile-about-watch.jpg" alt="Watch on the cloth" />
+    </picture>
   </div>
-  <picture class="about-photo">
-    <source srcset="" />
-  </picture>
 </section>
