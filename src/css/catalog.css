@@ -107,6 +107,7 @@
         display: none;
     }
 }
+
 @media only screen and (min-width: 1280px) {
     .catalog-title {        
         column-gap: 23px;
