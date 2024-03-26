@@ -9,32 +9,50 @@ window.addEventListener('scroll', function () {
     header.classList.remove('scrolled');
   }
 });
+window.addEventListener('scroll', function () {
+  const navLinks = document.querySelectorAll('.header-nav-a, .menu-nav-a');
 
+  navLinks.forEach(navLink => {
+    const sectionId = navLink.getAttribute('href').substring(1);
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      const top = section.offsetTop;
+      const bottom = top + section.clientHeight;
+      const scrollPosition = window.scrollY + 1;
+      if (scrollPosition >= top && scrollPosition < bottom) {
+        navLink.classList.add('active');
+      } else {
+        navLink.classList.remove('active');
+      }
+    }
+  });
+});
 const swiper = new Swiper('.swiper', {
   // Настройки Swiper
   slidersPerView: 3,
   // slidesPerGroup:3,
   loop: true, // Бесконечная прокрутка
   pagination: {
-      el: '.swiper-pagination',
-      clickable: true, // Делает пагинацию кликабельной
+    el: '.swiper-pagination',
+    clickable: true, // Делает пагинацию кликабельной
   },
   navigation: {
     nextEl: '.btn-prevt',
     prevEl: '.btn-next',
   },
-  breakpoints:{
-      1280: {
-          slidesPerView: 4,
-      },
-      768: {
-          slidesPerView: 3,
-          // spaceBetween: 16,
-      },
-      320: {
-          slidesPerView: 2,
-          // spaceBetween: 20,
-      },
+  breakpoints: {
+    1280: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 3,
+      // spaceBetween: 16,
+    },
+    320: {
+      slidesPerView: 2,
+      // spaceBetween: 20,
+    },
   },
 
 });
