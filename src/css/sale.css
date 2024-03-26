@@ -5,6 +5,11 @@
   color: #0c0c0c;
   margin-bottom: 24px;
 }
+.sale-container-desk {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .sale-container-list-img {
   margin-bottom: 20px;
 }
@@ -28,12 +33,14 @@
 .sale-container-watch {
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
-  height: 385px;
   background-color: #f3f3f3;
-  margin-bottom: 20px;
+}
+.sale-pic {
+  display: flex;
+  justify-content: center;
 }
 .sale-watch-img {
-  margin: 50px auto;
+  padding: 50px 0;
 }
 .sale-container-about {
   padding: 48px 28px;
@@ -193,7 +200,7 @@
     margin-bottom: 0;
   }
   .sale-container-desk {
-    display: flex;
+    flex-direction: row;
     gap: 40px;
   }
   .sale-container-watch {

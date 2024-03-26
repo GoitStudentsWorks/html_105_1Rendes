@@ -73,6 +73,7 @@ a {
   height: 44px;
   background-color: inherit;
   flex-shrink: 0;
+  font-style: inherit;
   border-radius: 16px;
   border: 1px solid rgba(251, 251, 251, 0.2);
   margin-bottom: 40px;
@@ -198,6 +199,7 @@ a {
     width: 160px;
     height: 48px;
     flex-shrink: 0;
+    margin-bottom: 0;
   }
 
   .footer-tel-text {
