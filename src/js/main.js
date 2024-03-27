@@ -10,24 +10,28 @@ window.addEventListener('scroll', function () {
   }
 });
 window.addEventListener('scroll', function () {
+  const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.header-nav-a, .menu-nav-a');
 
-  navLinks.forEach(navLink => {
-    const sectionId = navLink.getAttribute('href').substring(1);
-    const section = document.getElementById(sectionId);
+  // Визначаємо, яка секція знаходиться в верхній частині вікна
+  let currentSection = null;
+  sections.forEach(section => {
+    const top = section.offsetTop;
+    if (window.scrollY + 100 >= top) {
+      currentSection = section;
+    }
+  });
 
-    if (section) {
-      const top = section.offsetTop;
-      const bottom = top + section.clientHeight;
-      const scrollPosition = window.scrollY + 1;
-      if (scrollPosition >= top && scrollPosition < bottom) {
-        navLink.classList.add('active');
-      } else {
-        navLink.classList.remove('active');
-      }
+  // Додаємо клас .active до відповідного посилання в навігації
+  navLinks.forEach(navLink => {
+    if (navLink.getAttribute('href').substring(1) === currentSection.id) {
+      navLink.classList.add('active');
+    } else {
+      navLink.classList.remove('active');
     }
   });
 });
+
 const swiper = new Swiper('.swiper', {
   // Настройки Swiper
   slidersPerView: 3,
@@ -54,32 +58,27 @@ const swiper = new Swiper('.swiper', {
       // spaceBetween: 20,
     },
   },
-
 });
 
 // button show more///--------
-// 
-document.addEventListener("DOMContentLoaded", function() {
+//
+document.addEventListener('DOMContentLoaded', function () {
   var button = document.getElementById('toggleItemsButton');
   var hiddenItems = document.querySelectorAll('.hidden');
 
-  button.addEventListener('click', function() {
-      hiddenItems.forEach(function(item) {
-          if (item.style.display === 'none') {
-              item.style.display = 'block';
-          } else {
-              item.style.display = 'none';
-          }
-      });
-
-      if (button.textContent === 'Show More') {
-          button.textContent = 'Close';
+  button.addEventListener('click', function () {
+    hiddenItems.forEach(function (item) {
+      if (item.style.display === 'none') {
+        item.style.display = 'block';
       } else {
-          button.textContent = 'Show More';
+        item.style.display = 'none';
       }
+    });
+
+    if (button.textContent === 'Show More') {
+      button.textContent = 'Close';
+    } else {
+      button.textContent = 'Show More';
+    }
   });
 });
-
-
-
-
