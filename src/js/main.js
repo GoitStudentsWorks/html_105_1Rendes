@@ -12,8 +12,6 @@ window.addEventListener('scroll', function () {
 window.addEventListener('scroll', function () {
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.header-nav-a, .menu-nav-a');
-
-  // Визначаємо, яка секція знаходиться в верхній частині вікна
   let currentSection = null;
   sections.forEach(section => {
     const top = section.offsetTop;
@@ -21,8 +19,6 @@ window.addEventListener('scroll', function () {
       currentSection = section;
     }
   });
-
-  // Додаємо клас .active до відповідного посилання в навігації
   navLinks.forEach(navLink => {
     if (navLink.getAttribute('href').substring(1) === currentSection.id) {
       navLink.classList.add('active');
